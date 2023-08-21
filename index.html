@@ -62,31 +62,34 @@
                           <img src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Flexible Sofa</h2>
+                          <h2 class="card-title " id="card-title">Flexible Sofa</h2>
                           <p class="font-semibold text-red-500 text-xl">$ <span>430.00</span></p>
                           <div class="card-actions w-full">
-                            <button class="btn bg-yellow-500 hover:bg-red-400 w-full text-white">Add to card</button>
+                            <button onclick="card(this)" class="btn text-xl bg-yellow-500 hover:bg-red-400 w-full text-white">Add to card</button>
                           </div>
                         </div>
                       </div>
                       <!-- card 2 -->
                     <div class="card rounded-md  bg-base-100 border-2 border-solid border-red-500 ">
                         <figure class="px-5 pt-5">
-                          <img src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
+                          <img src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Flexible Sofa</h2>
-                          <p class="font-semibold text-red-500 text-xl">$ <span>430.00</span></p>
+                          <h2 class="card-title">Children play</h2>
+                          <p id="card-price" class="font-semibold text-red-500 text-xl">$ <span>299.00</span></p>
                           <div class="card-actions w-full">
-                            <button class="btn bg-yellow-500 hover:bg-red-400 w-full text-white">Add to card</button>
+                            <button onclick="card(this)" class="btn text-xl bg-yellow-500 hover:bg-red-400 w-full text-white">Add to card</button>
                           </div>
                         </div>
                       </div>
                 </div>
                 
             </div>
-            <div class=" bg-slate-200 p-6 rounded-lg w-4/12">
-                <button class="btn justify-start text-xl bg-yellow-500 hover:bg-red-400 w-full text-white">Card</button>
+            <div class=" bg-slate-100 p-6 rounded-lg w-4/12">
+                <h4 class="pt-2 pb-3 rounded-md pl-3 justify-start text-3xl bg-yellow-500  w-full text-white">My Card</h4>
+                <div id="card-container" class=" w-full my-5">
+
+                </div>
                 <hr class=" my-2 border-b-2 border-solid border-slate-500 ">
                 <p class="w-full flex justify-between"><span class="text-black font-semibold text-left text-xl" id="total">Total</span> <span id="total-price" class="text-red-500  text-xl text-right font-bold">$ 0.00</span></p>
             </div>
