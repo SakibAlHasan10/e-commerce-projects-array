@@ -18,7 +18,7 @@ function card(e) {
     cardContainer.appendChild(div)
     addContainer.push(div)
     const btn = document.createElement('button');
-    btn.innerHTML += `<button  class="trash ml-5 font-semibold text-yellow-500  " > <i class="fa-solid fa-trash text-2xl"></i> 
+    btn.innerHTML += `<button  class="trash ml-5 font-semibold hover:text-red-400 text-yellow-500  " > <i class="fa-solid fa-trash text-2xl"></i> 
     </button> `
     div.appendChild(btn)
     const cadProduct = document.getElementById("cad-product");
@@ -43,7 +43,4 @@ function card(e) {
         navTotal.innerText = minus.toFixed(2);
         div.remove()
     })
-
-
-
 }
