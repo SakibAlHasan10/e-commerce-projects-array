@@ -35,7 +35,7 @@ function card(e) {
     // remove element of side cad
     btn.addEventListener('click', (e) => {
         const cadPrice = e.target.parentNode.parentNode.parentNode.childNodes[5].innerText.split(" ")[1];
-        const minus = count - parseFloat(cadPrice);
+        const minus = count -= parseFloat(cadPrice);
         const countChild = cardContainer.childElementCount-1;
         cadProduct.innerText = countChild;
         cadProduct2.innerText = countChild;
